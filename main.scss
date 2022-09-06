@@ -1,5 +1,5 @@
 // import individual scss files
-@import "./styles/darkVariables";
-// @import "./styles/lightVariables";
-@import "./styles/fonts";
 @import "./styles/reset";
+@import "./styles/fonts";
+@import "./styles/color-palette";
+@import "./styles/mixins";
