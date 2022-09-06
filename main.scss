@@ -18,6 +18,10 @@ body {
     justify-content: space-between;
 }
 
+// ================
+// social tile grid
+// ================
+
 // social grid holding social tiles
 .social-grid {
     display: grid;
@@ -36,3 +40,13 @@ body {
     display: flex;
 }
 // facebook tile
+
+
+// ================
+// overview section
+// ================
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+}
