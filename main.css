@@ -1,1 +1,42 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**
+ * theme-aware - Change color of a css property based on the currently active theme
+ *
+ * @param  {key}     CSS property
+ * @param  {color}   Color name defined in the themes under _color-palette.scss
+ *
+ * @example - @include theme-aware('background', 'color-background');
+ * @returns - background: #FFF;
+ */
+body {
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.social-user {
+  display: flex;
+}
+
+.social-counter {
+  display: flex;
+}/*# sourceMappingURL=main.css.map */
