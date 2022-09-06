@@ -1,0 +1,47 @@
+// light and dark themes nested into the $themes variable
+$themes: (
+  dark: (
+    primaryBackground: #1D1F29, 
+    primaryText: #FFFFFF, 
+    secondaryText: #8C98C6,
+    tileBackground: #252B42,
+    tileHover: #333A55,
+    facebookTileShadow: #1DA1F2,
+    facebookFill: #178FF5,
+    twitterTileShadow: #1DA1F2,
+    twitterFill: #1DA1F2, 
+    youtubeTileShadow: #DC414C, 
+    youtubeFill: #DC414C, 
+    redText: #DC414C, 
+    downIconFill: #DC414C,
+    greenText: #1EB589, 
+    upIconFill:#1EB589, 
+    instagramFill: linear-gradient(to right #df4896, #ee877e, #fdc366),
+    instagramTileShadow: linear-gradient(to right #df4896, #ee877e, #fdc366),
+    themeToggleTrack: linear-gradient(to bottom #40db82, #388fe7),
+    themeToggle: #252B42
+  ),
+
+  light: (
+    primaryBackground: #F7F9FF,
+    primaryText: #1D1F29,
+    secondaryText: #63687D,
+    tileBackground: #F1F3FA,
+    tileHover: #E1E4F0,
+    facebookTileShadow: #178FF5,
+    facebookFill: #178FF5,
+    twitterTileShadow: #1DA1F2,
+    twitterFill: #1DA1F2,
+    youtubeTileShadow: #DC414C,
+    youtubeFill: #DC414C,
+    redText: #DC414C,
+    downIconFill: #DC414C,
+    greenText: #1EB589,
+    upIconFill: #1EB589,
+    instagramFill: linear-gradient(to right #DF4896, #EE877E, #FDC366),
+    instagramTileShadow: linear-gradient(to right #DF4896, #EE877E, #FDC366),
+    themeToggleTrack: #AEB3CB,
+    themeToggle: #F1F3FA
+
+  )
+);
