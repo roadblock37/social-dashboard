@@ -49,4 +49,18 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 2rem;
+    row-gap: 1.5rem;
+}
+
+// container holding title and social icon
+// in top of overview tile
+.tile-title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+// container holding amount and percentage
+.tile-amounts-container {
+    display: flex;
+    justify-content: space-between;
 }

@@ -46,4 +46,15 @@ body {
   grid-template-columns: repeat(4, 1fr);
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+  row-gap: 1.5rem;
+}
+
+.tile-title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tile-amounts-container {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
