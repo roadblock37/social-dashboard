@@ -117,6 +117,25 @@ input:checked + .slider:before {
 
 .social-user {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 32%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.social-user h6 {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.theme-dark .social-user h6 {
+  color: #8C98C6;
+}
+.theme-light .social-user h6 {
+  color: #63687D;
+}
+
+.instagram {
+  width: 40%;
 }
 
 .social-counter {

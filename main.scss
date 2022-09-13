@@ -6,41 +6,40 @@
 
 // set body padding
 body {
-    // calls mixin to set background color
-    @include theme-aware('background', 'primaryBackground');
-    padding-left: 8rem;
-    padding-right: 8rem;
-    padding-top: 3rem;
-    padding-bottom: 4rem;
+  // calls mixin to set background color
+  @include theme-aware("background", "primaryBackground");
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 
 // ============================
-// header container with 
+// header container with
 // page logo and theme selector
 // ============================
 .header-container {
-    display: flex;
-    justify-content: space-between;    
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo-container {
-    margin-bottom: 2rem;
-    h1 {
-    @include theme-aware('color', 'primaryText');        
-        font: {            
-            size: 1.75rem;
-            weight: bold;
-        }
+  margin-bottom: 2rem;
+  h1 {
+    @include theme-aware("color", "primaryText");
+    font: {
+      size: 1.75rem;
+      weight: bold;
     }
-    p {
-    @include theme-aware('color', 'secondaryText');
+  }
+  p {
+    @include theme-aware("color", "secondaryText");
     margin-top: 0.5rem;
-        font: {
-            size: 0.75rem;
-            weight: bold;
-        }       
-
+    font: {
+      size: 0.75rem;
+      weight: bold;
     }
+  }
 }
 
 // ==============
@@ -49,44 +48,44 @@ body {
 
 // the switch - box around the slider
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
 // hide default html checkbox
 .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 // the slider
 .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    // TODO
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // TODO
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider::before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    // TODO
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  // TODO
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 // input:checked + .slider {
@@ -98,22 +97,19 @@ body {
 // }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
 
-  /* Rounded sliders */
+/* Rounded sliders */
 .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
+  border-radius: 34px;
+}
 
-
-
+.slider.round:before {
+  border-radius: 50%;
+}
 
 // ================
 // social tile grid
@@ -121,51 +117,72 @@ input:checked + .slider:before {
 
 // social grid holding social tiles
 .social-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
 }
 
 .social-tile {
-    @include theme-aware('background', 'tileBackground');
-    display: flex;
-    flex: {
-        direction: column;        
-    }
-    align-items: center;
+  @include theme-aware("background", "tileBackground");
+  display: flex;
+  flex: {
+    direction: column;
+  }
+  align-items: center;
 }
 // social user flex container
 // contains social icon and username
 .social-user {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 32%;
+
+
+  h6 {
+    @include theme-aware("color", "secondaryText");
+    font: {
+      size: 0.75rem;
+      weight: bold;
+    }
+  }
+
+  margin: {
+    top: 1rem;
+    bottom: 1rem
+  }
+}
+
+// instagram social user container
+.instagram {
+    width: 40%;
 }
 
 // social counter containing svg icon and number of followers
 .social-counter {
-    display: flex;
+  display: flex;
 }
 // facebook tile
-
 
 // ================
 // overview section
 // ================
 .overview-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 2rem;
-    row-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  row-gap: 1.5rem;
 }
 
 // container holding title and social icon
 // in top of overview tile
 .tile-title-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 // container holding amount and percentage
 .tile-amounts-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
