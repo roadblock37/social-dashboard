@@ -146,6 +146,10 @@ input:checked + .slider:before {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.social-user svg {
+  max-width: 100%;
+  height: auto;
+}
 .social-user h6 {
   font-size: 0.75rem;
   font-weight: bold;
@@ -181,6 +185,42 @@ input:checked + .slider:before {
 }
 .theme-light .social-counter {
   color: #63687D;
+}
+
+.facebook {
+  box-shadow: inset 0px 5px 0px 0px;
+}
+.theme-dark .facebook {
+  color: #1DA1F2;
+}
+.theme-light .facebook {
+  color: #178FF5;
+}
+
+.twitter {
+  box-shadow: inset 0px 5px 0px 0px;
+}
+.theme-dark .twitter {
+  color: #1DA1F2;
+}
+.theme-light .twitter {
+  color: #1DA1F2;
+}
+
+.instagramBoxShadow {
+  background: linear-gradient(to right, #fdc366, #ee877e, #df4896);
+  height: 5px;
+  width: 100%;
+}
+
+.youtube {
+  box-shadow: inset 0px 5px 0px 0px;
+}
+.theme-dark .youtube {
+  color: #DC414C;
+}
+.theme-light .youtube {
+  color: #DC414C;
 }
 
 .overview-grid {
