@@ -186,7 +186,16 @@ input:checked + .slider:before {
 
 // social counter containing svg icon and number of followers
 .social-counter {
+    @include theme-aware("color", "secondaryText");
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  font: {
+    size: 0.75rem;
+    weight: bold;
+  }
 }
 // facebook tile
 
