@@ -103,6 +103,11 @@ input:checked + .slider:before {
        column-gap: 2rem;
 }
 
+.social-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .theme-dark .social-tile {
   background: #252B42;
 }

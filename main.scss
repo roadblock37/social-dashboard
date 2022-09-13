@@ -128,6 +128,11 @@ input:checked + .slider:before {
 
 .social-tile {
     @include theme-aware('background', 'tileBackground');
+    display: flex;
+    flex: {
+        direction: column;        
+    }
+    align-items: center;
 }
 // social user flex container
 // contains social icon and username
