@@ -24,14 +24,21 @@ body {
 }
 
 .logo-container {
+    margin-bottom: 2rem;
     h1 {
-    @include theme-aware('color', 'primaryText');
-        
-        font: {
-            
+    @include theme-aware('color', 'primaryText');        
+        font: {            
             size: 1.75rem;
             weight: bold;
         }
+    }
+    p {
+    @include theme-aware('color', 'secondaryText');
+        font: {
+            size: 0.75rem;
+            weight: bold;
+        }       
+
     }
 }
 

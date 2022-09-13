@@ -23,6 +23,9 @@ body {
   justify-content: space-between;
 }
 
+.logo-container {
+  margin-bottom: 2rem;
+}
 .logo-container h1 {
   font-size: 1.75rem;
   font-weight: bold;
@@ -32,6 +35,16 @@ body {
 }
 .theme-light .logo-container h1 {
   color: #1D1F29;
+}
+.logo-container p {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.theme-dark .logo-container p {
+  color: #8C98C6;
+}
+.theme-light .logo-container p {
+  color: #63687D;
 }
 
 .switch {
