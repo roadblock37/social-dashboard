@@ -120,6 +120,7 @@ input:checked + .slider:before {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 2rem;
+  margin-bottom: 2rem
 }
 
 .social-tile {
@@ -155,7 +156,7 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 32%;
 
   h6 {
     @include theme-aware("color", "secondaryText");
@@ -181,7 +182,7 @@ input:checked + .slider:before {
 
 // instagram social user container
 .instagram {
-    width: 65%;
+    width: 40%;
 }
 
 // social counter containing svg icon and number of followers
