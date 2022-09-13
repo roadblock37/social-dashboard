@@ -20,7 +20,19 @@ body {
 // ============================
 .header-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
+}
+
+.logo-container {
+    h1 {
+    @include theme-aware('color', 'primaryText');
+        
+        font: {
+            
+            size: 1.75rem;
+            weight: bold;
+        }
+    }
 }
 
 // ==============

@@ -23,6 +23,17 @@ body {
   justify-content: space-between;
 }
 
+.logo-container h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+.theme-dark .logo-container h1 {
+  color: #FFFFFF;
+}
+.theme-light .logo-container h1 {
+  color: #1D1F29;
+}
+
 .switch {
   position: relative;
   display: inline-block;
