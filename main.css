@@ -114,12 +114,34 @@ input:checked + .slider:before {
 .theme-light .social-tile {
   background: #F1F3FA;
 }
+.social-tile h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: -0.125rem;
+}
+.theme-dark .social-tile h1 {
+  color: #FFFFFF;
+}
+.theme-light .social-tile h1 {
+  color: #1D1F29;
+}
+.social-tile p {
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+.theme-dark .social-tile p {
+  color: #8C98C6;
+}
+.theme-light .social-tile p {
+  color: #63687D;
+}
 
 .social-user {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 32%;
+  width: 50%;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -134,8 +156,14 @@ input:checked + .slider:before {
   color: #63687D;
 }
 
+.followers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .instagram {
-  width: 40%;
+  width: 65%;
 }
 
 .social-counter {

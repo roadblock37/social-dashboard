@@ -129,15 +129,33 @@ input:checked + .slider:before {
     direction: column;
   }
   align-items: center;
+
+  h1 {
+    @include theme-aware("color", "primaryText");
+    font: {
+        size: 3.5rem;
+        weight: bold;
+    }
+    letter-spacing: -0.125rem;
+  }
+
+  p {
+    @include theme-aware("color", "secondaryText");
+    font: {
+        size: 0.75rem;
+        weight: bold;
+    }
+    letter-spacing: 0.3rem;
+  }
 }
+
 // social user flex container
 // contains social icon and username
 .social-user {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 32%;
-
+  width: 50%;
 
   h6 {
     @include theme-aware("color", "secondaryText");
@@ -153,9 +171,16 @@ input:checked + .slider:before {
   }
 }
 
+// flex container with number of followers in social tile
+.followers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 // instagram social user container
 .instagram {
-    width: 40%;
+    width: 65%;
 }
 
 // social counter containing svg icon and number of followers
