@@ -107,7 +107,6 @@ img {
   background-image: linear-gradient(to bottom, #40DB82, #388FE7);
   transition: 0.4s;
 }
-
 .slider::before {
   position: absolute;
   content: "";
@@ -115,8 +114,13 @@ img {
   width: 18px;
   left: 4px;
   bottom: 3px;
-  background-color: #F1F3FA;
   transition: 0.4s;
+}
+.theme-dark .slider::before {
+  background: #252B42;
+}
+.theme-light .slider::before {
+  background: #F1F3FA;
 }
 
 input:checked + .slider:before {
