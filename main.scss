@@ -103,6 +103,7 @@ img {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 
+  // toggle button inside slider track
   &::before {
     position: absolute;
   content: "";
