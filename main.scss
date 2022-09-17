@@ -14,7 +14,10 @@ body {
   padding-bottom: 4rem;
 }
 
-
+img {
+  width: 100%;
+  height: auto;
+}
 
 // ============================
 // header container with
@@ -160,10 +163,6 @@ input:checked + .slider:before {
   align-items: center;
   width: 32%;
 
-  svg {
-    max-width: 100%;
-    height: auto;
-}
   h6 {
     @include theme-aware("color", "secondaryText");
     font: {
