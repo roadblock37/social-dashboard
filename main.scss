@@ -196,33 +196,52 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
 
   font: {
     size: 0.75rem;
     weight: bold;
   }
 }
-// facebook tile
-.facebook {
-    box-shadow: inset 0px 5px 0px 0px;@include theme-aware("color", "facebookTileShadow");
-}
-// twitter tile
-.twitter {
-    box-shadow: inset 0px 5px 0px 0px;@include theme-aware("color", "twitterTileShadow");
 
+// bottom margin for social counter in social tile
+.counter-margin {
+  margin-bottom: 1rem;
 }
+
+// facebook box shadow
+.facebookBoxShadow {
+  @include theme-aware("background", "facebookFill");
+  height: 5px;
+    width: 100%;
+}
+
+// twitter user
+// sets height of user container the same as other social tiles
+.twitter-user {
+    height: 20px;
+}
+
+// twitter box shadow
+.twitterBoxShadow {
+  @include theme-aware("background", "twitterFill");
+  height: 5px;
+    width: 100%;
+}
+
 // instagram tile
 .instagramBoxShadow {
     background: linear-gradient(to right, #fdc366, #ee877e, #df4896);
     height: 5px;
     width: 100%;
 }
-// youtube tile
-.youtube {
-    box-shadow: inset 0px 5px 0px 0px;@include theme-aware("color", "youtubeTileShadow");
 
+// youtube box shadow
+.youtubeBoxShadow {
+  @include theme-aware("background", "youtubeFill");
+  height: 5px;
+    width: 100%;
 }
+
 
 // ================
 // overview section
@@ -239,12 +258,22 @@ input:checked + .slider:before {
 .tile-title-container {
   display: flex;
   justify-content: space-between;
+  @include theme-aware("color", "secondaryText");
+  margin-bottom: 2rem;
+  p: {
+    font: {
+      size: 0.75rem;
+      weight: bold;
+    }
+  }
 }
 
 // container holding amount and percentage
 .tile-amounts-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  @include theme-aware("color", "primaryText");
 }
 
 // overview grid header
@@ -257,9 +286,11 @@ input:checked + .slider:before {
 .overview-tile {
   @include theme-aware("background", "tileBackground");
   padding: {
-    top: 1rem;
-    bottom: 1rem;
-    right: 1rem;
-    left: 1rem;
+    top: 1.5rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    left: 1.5rem;
   }
 }
+
+

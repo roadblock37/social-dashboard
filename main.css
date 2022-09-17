@@ -177,7 +177,6 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
   font-size: 0.75rem;
   font-weight: bold;
 }
@@ -188,24 +187,34 @@ input:checked + .slider:before {
   color: #63687D;
 }
 
-.facebook {
-  box-shadow: inset 0px 5px 0px 0px;
-}
-.theme-dark .facebook {
-  color: #1DA1F2;
-}
-.theme-light .facebook {
-  color: #178FF5;
+.counter-margin {
+  margin-bottom: 1rem;
 }
 
-.twitter {
-  box-shadow: inset 0px 5px 0px 0px;
+.facebookBoxShadow {
+  height: 5px;
+  width: 100%;
 }
-.theme-dark .twitter {
-  color: #1DA1F2;
+.theme-dark .facebookBoxShadow {
+  background: #178FF5;
 }
-.theme-light .twitter {
-  color: #1DA1F2;
+.theme-light .facebookBoxShadow {
+  background: #178FF5;
+}
+
+.twitter-user {
+  height: 20px;
+}
+
+.twitterBoxShadow {
+  height: 5px;
+  width: 100%;
+}
+.theme-dark .twitterBoxShadow {
+  background: #1DA1F2;
+}
+.theme-light .twitterBoxShadow {
+  background: #1DA1F2;
 }
 
 .instagramBoxShadow {
@@ -214,14 +223,15 @@ input:checked + .slider:before {
   width: 100%;
 }
 
-.youtube {
-  box-shadow: inset 0px 5px 0px 0px;
+.youtubeBoxShadow {
+  height: 5px;
+  width: 100%;
 }
-.theme-dark .youtube {
-  color: #DC414C;
+.theme-dark .youtubeBoxShadow {
+  background: #DC414C;
 }
-.theme-light .youtube {
-  color: #DC414C;
+.theme-light .youtubeBoxShadow {
+  background: #DC414C;
 }
 
 .overview-grid {
@@ -235,11 +245,27 @@ input:checked + .slider:before {
 .tile-title-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
+  p-font-size: 0.75rem;
+  p-font-weight: bold;
+}
+.theme-dark .tile-title-container {
+  color: #8C98C6;
+}
+.theme-light .tile-title-container {
+  color: #63687D;
 }
 
 .tile-amounts-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+}
+.theme-dark .tile-amounts-container {
+  color: #FFFFFF;
+}
+.theme-light .tile-amounts-container {
+  color: #1D1F29;
 }
 
 .overview-header {
@@ -253,10 +279,10 @@ input:checked + .slider:before {
 }
 
 .overview-tile {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 .theme-dark .overview-tile {
   background: #252B42;
