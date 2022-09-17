@@ -19,6 +19,16 @@ img {
   height: auto;
 }
 
+// green text in social counter
+.greenText {
+  @include theme-aware("color", "greenText");
+}
+
+// red text in social counter
+.redText {
+  @include theme-aware("color", "redText");
+}
+
 // ============================
 // header container with
 // page logo and theme selector
@@ -135,6 +145,7 @@ input:checked + .slider:before {
     direction: column;
   }
   align-items: center;
+  border-radius: 5px;
 
   h1 {
     @include theme-aware("color", "primaryText");
@@ -213,6 +224,8 @@ input:checked + .slider:before {
   @include theme-aware("background", "facebookFill");
   height: 5px;
     width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 // twitter user
@@ -226,6 +239,8 @@ input:checked + .slider:before {
   @include theme-aware("background", "twitterFill");
   height: 5px;
     width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 // instagram tile
@@ -233,6 +248,8 @@ input:checked + .slider:before {
     background: linear-gradient(to right, #fdc366, #ee877e, #df4896);
     height: 5px;
     width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 // youtube box shadow
@@ -240,6 +257,9 @@ input:checked + .slider:before {
   @include theme-aware("background", "youtubeFill");
   height: 5px;
     width: 100%;
+    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 
@@ -272,14 +292,15 @@ input:checked + .slider:before {
 .tile-amounts-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: baseline;
   @include theme-aware("color", "primaryText");
+  font-size: 2rem
 }
 
 // overview grid header
 .overview-header {
   @include theme-aware("color", "primaryText");
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 // individual tile in overview section
@@ -291,6 +312,7 @@ input:checked + .slider:before {
     right: 1.5rem;
     left: 1.5rem;
   }
+  border-radius: 5px;
 }
 
 

@@ -23,6 +23,20 @@ img {
   height: auto;
 }
 
+.theme-dark .greenText {
+  color: #1EB589;
+}
+.theme-light .greenText {
+  color: #1EB589;
+}
+
+.theme-dark .redText {
+  color: #DC414C;
+}
+.theme-light .redText {
+  color: #DC414C;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -113,6 +127,7 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
 }
 .theme-dark .social-tile {
   background: #252B42;
@@ -194,6 +209,8 @@ input:checked + .slider:before {
 .facebookBoxShadow {
   height: 5px;
   width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .theme-dark .facebookBoxShadow {
   background: #178FF5;
@@ -209,6 +226,8 @@ input:checked + .slider:before {
 .twitterBoxShadow {
   height: 5px;
   width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .theme-dark .twitterBoxShadow {
   background: #1DA1F2;
@@ -221,11 +240,15 @@ input:checked + .slider:before {
   background: linear-gradient(to right, #fdc366, #ee877e, #df4896);
   height: 5px;
   width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .youtubeBoxShadow {
   height: 5px;
   width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .theme-dark .youtubeBoxShadow {
   background: #DC414C;
@@ -259,7 +282,8 @@ input:checked + .slider:before {
 .tile-amounts-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: baseline;
+  font-size: 2rem;
 }
 .theme-dark .tile-amounts-container {
   color: #FFFFFF;
@@ -269,7 +293,7 @@ input:checked + .slider:before {
 }
 
 .overview-header {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .theme-dark .overview-header {
   color: #FFFFFF;
@@ -283,6 +307,7 @@ input:checked + .slider:before {
   padding-bottom: 1.5rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
+  border-radius: 5px;
 }
 .theme-dark .overview-tile {
   background: #252B42;
