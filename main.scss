@@ -246,3 +246,20 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-between;
 }
+
+// overview grid header
+.overview-header {
+  @include theme-aware("color", "primaryText");
+  margin-bottom: 1rem;
+}
+
+// individual tile in overview section
+.overview-tile {
+  @include theme-aware("background", "tileBackground");
+  padding: {
+    top: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+  }
+}

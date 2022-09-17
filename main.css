@@ -240,4 +240,27 @@ input:checked + .slider:before {
 .tile-amounts-container {
   display: flex;
   justify-content: space-between;
+}
+
+.overview-header {
+  margin-bottom: 1rem;
+}
+.theme-dark .overview-header {
+  color: #FFFFFF;
+}
+.theme-light .overview-header {
+  color: #1D1F29;
+}
+
+.overview-tile {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.theme-dark .overview-tile {
+  background: #252B42;
+}
+.theme-light .overview-tile {
+  background: #F1F3FA;
 }/*# sourceMappingURL=main.css.map */
