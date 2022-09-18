@@ -12,6 +12,10 @@ body {
   padding-right: 8rem;
   padding-top: 3rem;
   padding-bottom: 4rem;
+
+  @media screen and (max-width: 375px) {
+    padding: 2rem;
+  }
 }
 
 img {
@@ -36,11 +40,38 @@ img {
 .header-container {
   display: flex;
   justify-content: space-between;
+
+  // mobile design
+  @media screen and (max-width: 375px) {
+   flex-direction: column;
+   margin-bottom: 2rem;
+  }
+}
+
+.seperator {
+  display: none;
+  @media screen and (max-width: 375px) {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid; @include theme-aware("background", "secondaryText");
+    margin-bottom: 1rem;
+    
+   }
+
 }
 
 .logo-container {
   margin-bottom: 2rem;
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
   h1 {
+    @media screen and (max-width: 375px) {
+      font: {
+        size: 1.5rem;
+      }
+    }
     @include theme-aware("color", "primaryText");
     font: {
       size: 1.75rem;
@@ -69,10 +100,15 @@ img {
   align-items: center;
   height: 1.75rem;
   width: 20%;
-  @include theme-aware("color", "primaryText");
+  @include theme-aware("color", "secondaryText");
   font: {
     size: 0.75rem;
     weight: bold;
+  }
+
+  @media screen and (max-width: 375px) {
+    justify-content: space-between;
+    width: 100%;
   }
 }
 // the switch - box around the slider
@@ -144,7 +180,13 @@ input:checked + .slider:before {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 2rem;
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
+
+  // mobile design change grid to 1 column 100% width
+  @media screen and (max-width: 375px) {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
 }
 
 .social-tile {
