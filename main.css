@@ -192,7 +192,7 @@ input:checked + .slider:before {
 @media screen and (max-width: 375px) {
   .social-grid {
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 1rem;
+    row-gap: 2rem;
   }
 }
 
@@ -239,6 +239,11 @@ input:checked + .slider:before {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 375px) {
+  .social-user {
+    width: 25%;
+  }
+}
 .social-user h6 {
   font-size: 0.75rem;
   font-weight: bold;
@@ -258,7 +263,7 @@ input:checked + .slider:before {
 }
 
 .instagram {
-  width: 40%;
+  width: 32%;
 }
 
 .social-counter {

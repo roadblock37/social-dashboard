@@ -48,6 +48,7 @@ img {
   }
 }
 
+// horizontal line shown only in mobile between header and theme selector
 .seperator {
   display: none;
   @media screen and (max-width: 375px) {
@@ -185,7 +186,7 @@ input:checked + .slider:before {
   // mobile design change grid to 1 column 100% width
   @media screen and (max-width: 375px) {
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 1rem;
+    row-gap: 2rem;
   }
 }
 
@@ -225,6 +226,10 @@ input:checked + .slider:before {
   align-items: center;
   width: 32%;
 
+  @media screen and (max-width: 375px) {
+    width: 25%;
+  }
+
   h6 {
     @include theme-aware("color", "secondaryText");
     font: {
@@ -249,7 +254,7 @@ input:checked + .slider:before {
 
 // instagram social user container
 .instagram {
-    width: 40%;
+    width: 32%;
 }
 
 // social counter containing svg icon and number of followers
