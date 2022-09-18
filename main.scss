@@ -33,6 +33,7 @@ img {
   @include theme-aware("color", "redText");
 }
 
+
 // ============================
 // header container with
 // page logo and theme selector
@@ -110,6 +111,10 @@ img {
   @media screen and (max-width: 375px) {
     justify-content: space-between;
     width: 100%;
+  }
+
+  &:hover {
+    @include theme-aware("color", "primaryText");
   }
 }
 // the switch - box around the slider
@@ -202,6 +207,10 @@ input:checked + .slider:before {
   align-items: center;
   border-radius: 5px;
 
+  &:hover {
+    @include theme-aware("background", "tileHover");
+    cursor: pointer;
+  }
   h1 {
     @include theme-aware("color", "primaryText");
     font: {
@@ -381,6 +390,10 @@ input:checked + .slider:before {
     left: 1.5rem;
   }
   border-radius: 5px;
+  &:hover {
+    @include theme-aware("background", "tileHover");
+    cursor: pointer;
+  }
 }
 
 
