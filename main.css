@@ -150,8 +150,13 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to bottom, #40DB82, #388FE7);
   transition: 0.4s;
+}
+.theme-dark .slider {
+  background: linear-gradient(to bottom, #40db82, #388fe7);
+}
+.theme-light .slider {
+  background: #AEB3CB;
 }
 .slider::before {
   position: absolute;
@@ -167,6 +172,9 @@ img {
 }
 .theme-light .slider::before {
   background: #F1F3FA;
+}
+.slider:hover {
+  background-image: linear-gradient(to bottom, #40db82, #388fe7);
 }
 
 input:checked + .slider:before {
@@ -263,7 +271,12 @@ input:checked + .slider:before {
 }
 
 .instagram {
-  width: 32%;
+  width: 40%;
+}
+@media screen and (max-width: 375px) {
+  .instagram {
+    width: 32%;
+  }
 }
 
 .social-counter {

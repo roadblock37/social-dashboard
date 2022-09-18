@@ -135,8 +135,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  // TODO
-  background-image: linear-gradient(to bottom, #40DB82, #388FE7);
+  @include theme-aware("background", "themeToggleTrack");
   -webkit-transition: 0.4s;
   transition: 0.4s;
 
@@ -151,6 +150,10 @@ img {
   @include theme-aware("background", "tileBackground");
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  }
+
+  &:hover {
+    background-image: linear-gradient(to bottom, #40db82, #388fe7);
   }
 }
 
@@ -254,7 +257,11 @@ input:checked + .slider:before {
 
 // instagram social user container
 .instagram {
-    width: 32%;
+    width: 40%;
+
+    @media screen and (max-width: 375px) {
+      width: 32%;
+    }
 }
 
 // social counter containing svg icon and number of followers
